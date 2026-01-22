@@ -3,6 +3,7 @@ kind: Object
 metadata:
   name: opsmind-managed-namespace
 spec:
+  deletionPolicy: Delete
   forProvider:
     manifest:
       apiVersion: v1
