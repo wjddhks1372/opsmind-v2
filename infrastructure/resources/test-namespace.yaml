@@ -8,7 +8,7 @@ spec:
       apiVersion: v1
       kind: Namespace
       metadata:
-        name: opsmind-target-ns # 실제로 생성될 네임스페이스 이름
+        name: opsmind-final-ns # 실제로 생성될 네임스페이스 이름
         labels:
           repaired: "true"
   providerConfigRef:
