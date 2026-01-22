@@ -1,0 +1,15 @@
+apiVersion: kubernetes.crossplane.io/v1alpha2
+kind: Object
+metadata:
+  name: opsmind-managed-namespace
+spec:
+  forProvider:
+    manifest:
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: opsmind-target-ns # 실제로 생성될 네임스페이스 이름
+        labels:
+          repaired: "true"
+  providerConfigRef:
+    name: default
